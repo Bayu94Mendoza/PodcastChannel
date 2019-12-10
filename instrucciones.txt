@@ -1,0 +1,10 @@
+git fetch
+    busca si hay cambios que no esten en la compu 
+
+git pull
+    se trae los cambios
+
+git push
+    los combios que hay aca los envia al servidor
+
+
