@@ -1,0 +1,47 @@
+/* navbar */
+#icono{
+    position: relative;
+    top: 22px;
+    left: 100px;
+    width: 36px;
+}
+.menu{
+    position: relative;
+    left: 70%; 
+    top: 10px; 
+    font-size: 16px;
+    color: #060a24;
+}
+
+/* first */
+.hello{
+    top: 200px;
+    left: 200px;
+    width: 152px;
+    height: 84px;
+    size: 64px;
+    }
+.world{
+    top: 200px;
+    left: 352px;
+    width: 152px;
+    height: 84px;
+    size: 64px;
+    }
+.pale{
+    top: 200px;
+    left: 531px;
+    width: 152px;
+    height: 84px;
+    size: 64px;
+    }
+.dot{
+    top: 200px;
+    left: 922px;
+    width: 152px;
+    height: 84px;
+    size: 64px;
+    color: blue;
+    }
+
+
