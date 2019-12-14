@@ -1,47 +1,144 @@
-/* navbar */
-#icono{
-    position: relative;
-    top: 22px;
-    left: 100px;
-    width: 36px;
+body {
+    min-height:100%; 
+    position:relative; 
+    padding-bottom:100px;
+    font-family: 'IBM Plex Mono', monospace;
+    margin: 0;
+    overflow-x: hidden;
+    position: absolute;
 }
-.menu{
-    position: relative;
-    left: 70%; 
-    top: 10px; 
-    font-size: 16px;
-    color: #060a24;
+body > * {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+.nav-container  {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    margin: 0 0 0 .45em;
+    height: 36px;
+}
+.logo, .navigation {
+    list-style: none;
+    text-transform: uppercase;
+}
+.navigation  {
+    display: flex;
+}
+.navigation a {
+    display: block;
+    padding: 1em;
+    color: black;
+    text-decoration: none;
+}
+/* *********** media NAV *********** */
+@media all and (max-width: 990px) {
+    .nav-container {
+        flex-direction: column;
+    }
+    
+    .logo {
+        margin: 0;
+    }
+    
+    .navigation  {
+        width: 100%;
+        justify-content: space-around;
+    }
 }
 
-/* first */
-.hello{
-    top: 200px;
-    left: 200px;
-    width: 152px;
-    height: 84px;
-    size: 64px;
+@media all and (max-width: 600px) {
+    
+    .logo {
+        margin: .25em 0;
+        align-self: left; /* align the logo to the left side of 'nav-container' */
     }
-.world{
-    top: 200px;
-    left: 352px;
-    width: 152px;
-    height: 84px;
-    size: 64px;
+    
+    .navigation {
+        flex-direction: column;
     }
-.pale{
-    top: 200px;
-    left: 531px;
-    width: 152px;
-    height: 84px;
-    size: 64px;
+    
+    .navigation a { 
+        text-align: center; 
+        padding: 10px;
+        border-top: 1px solid rgba(255,255,255,0.3); 
+        border-bottom: 1px solid rgba(0,0,0,0.1); 
     }
-.dot{
-    top: 200px;
-    left: 922px;
-    width: 152px;
-    height: 84px;
-    size: 64px;
+    
+    .navigation li:last-of-type a {
+        border-bottom: none;
+    }
+}
+/* *************************MEDIA NAV*********************************** */
+#helloWorld{
+    font-size: 3em;
+    margin-bottom: 0;
+}
+#pbd{
     color: blue;
-    }
+}
+#parrf{
+    font-size: 0.75em;
+    margin-top: 0;
+}
+#conoceMas{
+    margin-top: 3vh;
+    background-color: #00F3BB;
+    border-radius: 2px;
+    border: none;
+    color:#000;
+    cursor: pointer;
+    display: inline-block;
+    height: 56px;
+    width: 226px;
+    outline: 0;
+    padding: 0 2rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+#episodes{
+    background-color: blueviolet;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-content: center;
+
+}
+.reproductores{
+    width: 584px;
+    height: 232px;
+}
 
 
+
+/* #episodes::before{
+    margin-top: -150px;
+    content: ' ';
+    position: absolute;
+    width: 200vw;
+    height: 60vh;
+    left: -50%;
+    z-index: -1;
+    background: linear-gradient(140deg, #0000FF 0%, #0000A3 100%);
+    transform: rotate(1.48turn); 
+} */
+/* 
+
+
+#latest{
+    position: relative;
+    overflow: hidden;
+    padding-top: 200px;
+}
+#latest:before {
+    content: ' ';
+    position: absolute;
+    width: 200vw;
+    height: 60vh;
+    left: -50%;
+    z-index: -1;
+    background:  linear-gradient(140deg, #0000FF 0%, #0000A3 100%);
+    transform: rotate(1.48turn);
+} */
