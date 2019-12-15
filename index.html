@@ -23,7 +23,6 @@
     
     
     <div id="jumbotron1" class="princial">
-        <!--First-->
         <div>
             <p id="helloWorld">
                 Hello <del>world</del> pale blue dot<span id="pbd">.</span>
@@ -37,10 +36,9 @@
         <button id="conoceMas" class="btn">Conocé más</button>
     </div>
     
-    <div id="episodes" class="principal">
-        <!--Second-->
-        <h1>Episodios</h1>
-        <div>
+    <div id="epContainer" class="principal">
+        <h2>Episodios</h2>
+        <div id="episodes">
             <iframe src="https://open.spotify.com/embed-podcast/show/2ySVrxGkN6n6frMTo9Nsrt" class="reproductores" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
             <iframe src="https://open.spotify.com/embed-podcast/episode/1ezdL2ivAGLwSE6Xbssxqt" class="reproductores" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
             <iframe src="https://open.spotify.com/embed-podcast/show/5JxcIaIkN8zx3Zy7yD9snv" class="reproductores" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
@@ -48,64 +46,68 @@
         </div>
     </div>
     
-    <div id="4" class="principal">
-        <!--Third-->
-        <div><img id="phone" src="assets/images/phone.png" alt=""></div>
-        <h1>De dónde venimos</h1>
-        <p>Our posturinfs, our imagined self-importance, the delusion that we have some priviliged position in the Universe, are challenged by this point pf pale light.
-            Our planet is a lonely speck in the great evolving cosmic dark. In our obscurity, in all this vatness, the is no hint that help will com from elsewhere to save us from ourselves.
-        </p>
+    <div id="deDonde" class="principal">
+        <img id="phone" src="assets/images/phone.png" alt="">
+        <div id="dndtxt">
+            <h2>De dónde venimos</h2>
+            <p>Our posturings, our imagined self-importance, the delusion that we have some privileged position in the Universe, are challenged by this point of pale light. 
+                <br><br>
+                Our planet is a lonely speck in the great enveloping cosmic dark. In our obscurity, in all this vastness, there is no hint that help will come from elsewhere to save us from ourselves.
+            </p>
+        </div>
     </div>
     
-    <div id="5" class="principal">
+    <div id="picsContainer" class="principal">
         <!--Fourth-->
-        <h1>Invitadas/os estelares</h1>
-        <div>
-            <img id="imagenes" src="assets/images/grace-hopper.png"> 
-            <img id="imagenes" src="assets/images/Katie-Bouman.png"> 
-            <img id="imagenes" src="assets/images/Margaret_Hamilton.png"> 
-            <img id="imagenes" src="assets/images/An E.R.A.Univac 1103 computer in the 1950s.png"> 
-            <img id="imagenes" src="assets/images/Computer operators with an Eniac — the world’s first programmable general-purpose computer.png"> 
-            <img id="imagenes" src="assets/images/susan-kare.png"> 
+        <h2 id="paddingHotfix">Invitadas/os estelares</h2>
+        <div id="pics">
+            <img src="assets/images/grace-hopper.png"> 
+            <img src="assets/images/Katie-Bouman.png"> 
+            <img src="assets/images/Margaret_Hamilton.png"> 
+            <img src="assets/images/An E.R.A.Univac 1103 computer in the 1950s.png"> 
+            <img src="assets/images/Computer operators with an Eniac — the world’s first programmable general-purpose computer.png"> 
+            <img src="assets/images/susan-kare.png"> 
         </div>
     </div>
     
-    <div id="6" class="principal">
-        <!--Fifth-->
-        <h1>Algunos de nuestros temas</h1>
+    <div id="temasContainer" class="principal">
         <div>
-            <img class="iconos" src="assets/images/icon1.svg">
-            <p>Trabajo remoto</p>
+            <h2>Algunos de nuestros temas</h2>
         </div>
-        <div>
-            <img class="iconos" src="assets/images/icon2.svg">
-            <p>Repensando la programacion</p>
-        </div>
-        <div>
-            <img class="iconos" src="assets/images/icon3.svg">
-            <p>Bases del código</p>
-        </div>
-        <div>
-            <img class="iconos" src="assets/images/icon4.svg">
-            <p>Seguridad informática</p>
+        <div id="iconContainer">
+            <div>
+                <img class="iconos" src="assets/images/icon1.svg">
+                <p>Trabajo remoto</p>
+            </div>
+            <div>
+                <img class="iconos" src="assets/images/icon2.svg">
+                <p>Repensando la programacion</p>
+            </div>
+            <div>
+                <img class="iconos" src="assets/images/icon3.svg">
+                <p>Bases del código</p>
+            </div>
+            <div>
+                <img class="iconos" src="assets/images/icon4.svg">
+                <p>Seguridad informática</p>
+            </div>
         </div>
     </div>
     
     <div id="latest" class="principal">
-        <!--Sixth-->
-        <h1>¿Querés las últimas novedades?</h1>
+        <h2>¿Querés las últimas novedades?</h2>
         <button class="btn episodios">ESUCHÁ LOS EPISODIOS</button>
     </div>
     
     <div id="footer" class="principal">
-        <!--Seventh-->
-        <h1>© 2019— Hello blue pale dot 
+        <p>© 2019— Hello blue pale dot</p>
+        <div>
             <i class="iconos fab fa-spotify"></i>
             <i class="iconos fab fa-instagram"></i>
             <i class="iconos fab fa-twitter"></i>
             <i class="iconos fab fa-facebook"></i>
             <i class="iconos fab fa-telegram"></i>
-        </h1>
+        </div>
     </div>
     
 </body>
