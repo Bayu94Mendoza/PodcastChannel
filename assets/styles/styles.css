@@ -1,11 +1,9 @@
 body {
     min-height:100%; 
-    position:relative; 
-    padding-bottom:100px;
+    position: absolute; 
     font-family: 'IBM Plex Mono', monospace;
     margin: 0;
     overflow-x: hidden;
-    position: absolute;
 }
 body > * {
     padding-left: 10%;
@@ -100,14 +98,15 @@ button{
     text-transform: uppercase;
     text-align: center;
 }
-#epContainer{
-    background-color: blueviolet;
-}
+
 #episodes{
     display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
-    align-content: center;
+    align-content: flex-start;
+}
+#episodes> *{
+    flex: 1 0 45%;
 }
 .reproductores{
     width: 584px;
@@ -116,12 +115,14 @@ button{
 #deDonde{
     display: flex;
     align-items: center;
-    justify-content: center;
-}
+    justify-content: left;
+    margin-top: 250px;
+    }
 #dndtxt{
     display: flex;
     flex-direction: column;
     max-width: 22em;
+    font-size: 18px;
 }
 #picsContainer{
     padding: 0;
@@ -153,6 +154,7 @@ button{
     display: flex;
     flex-direction: column;
     font-weight: bolder;
+    font-size: 24px;
 }
 #latest{
     display: flex;
@@ -168,39 +170,42 @@ button{
     position: absolute;
     width:80%;
     height: 95px;
-    top: 100%;
+    top: 100%;`
+    bottom: -50px;
 }
 #footer div{
     display: flex;
     justify-content: flex-end;
 }
 #footer i{
-    padding: 0 0.8em;
+    padding: 0 0.5em;
 }
-/* #episodes::before{
-    margin-top: -150px;
+#episodes::before{
+    margin-top: -22px;
     content: ' ';
     position: absolute;
     width: 200vw;
     height: 60vh;
-    left: -50%;
+    left: -70%;
     z-index: -1;
     background: linear-gradient(140deg, #0000FF 0%, #0000A3 100%);
-    transform: rotate(1.48turn); 
-} */
-/* 
+    transform: rotate(1.49turn); 
+    padding-bottom: 25vw;
+} 
+
 #latest{
     position: relative;
     overflow: hidden;
     padding-top: 200px;
+    color: #FFFFFF ;
 }
 #latest:before {
     content: ' ';
     position: absolute;
     width: 200vw;
     height: 60vh;
-    left: -50%;
+    left: -70%;
     z-index: -1;
     background:  linear-gradient(140deg, #0000FF 0%, #0000A3 100%);
     transform: rotate(1.48turn);
-} */
+} 
